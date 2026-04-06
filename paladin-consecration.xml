@@ -123,44 +123,6 @@
 		</sheet>
 	</element>
 
-	<!-- Seraph's Bane -->
-	<element name="Seraph's Bane" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_MAGIC_ITEM_SERAPHS_BANE">
-		<description>
-			<p>A longsword forged of rotted gold, spikes of the tyrant's lifeblood shooting out at every angle from its blade. It is a weapon that has slain the very angels themselves, brought the World Above to its knees, and harkened the near-complete ascension of the Godbreaker himself.</p>
-			<p>This weapon requires attunement. You gain a +3 bonus to attack and damage rolls made with this magic weapon. On a hit, it deals an additional 1d6 fire damage and 1d6 radiant damage.</p>
-			<p class="indent"><strong><em>Heartseeker.</em></strong> This weapon scores a critical hit on a roll of 19 or 20.</p>
-			<p class="indent"><strong><em>The Heavens Erased.</em></strong> This weapon deals double damage to Celestials.</p>
-			<p class="indent"><strong><em>Ascension.</em></strong> As a magic action, you call on the power of the Tyrant King, inheriting his Visage for one minute. After that minute, you gain five levels of exhaustion and fall unconscious. These levels of exhaustion can only be relieved via the effects of a long rest.</p>
-			<p class="indent"><strong><em>Sentient Weapon.</em></strong> Seraph's Bane is a sentient weapon of Neutral Evil alignment. When drawn, it cannot be sheathed before it has claimed a mortal soul, which it devours.</p>
-			<p class="indent"><strong><em>Counter.</em></strong> This weapon has a counter that tracks between 2 and a maximum value X set by the DM.</p>
-		</description>
-		<sheet alt="Seraph's Bane" usage="Counter: 2/X">
-			<description>+3 to attack and damage rolls. On a hit, deals an additional 1d6 fire and 1d6 radiant damage.
-			Heartseeker: Critical hit on a 19 or 20.
-			The Heavens Erased: Deals double damage to Celestials.
-			Ascension (Magic Action): Inherit the Tyrant King's Visage for 1 minute. Afterward, gain 5 levels of exhaustion and fall unconscious (relieved only by a long rest).
-			Sentient (Neutral Evil): Cannot be sheathed until it has claimed a mortal soul.</description>
-		</sheet>
-	</element>
-
-	<!-- Shield of the Cavalier -->
-	<element name="Shield of the Cavalier" type="Magic Item" source="Dungeon Master's Guide" id="ID_WOTC_DMG_MAGIC_ITEM_SHIELD_OF_THE_CAVALIER">
-		<description>
-			<p>While holding this Shield, you have a +2 bonus to Armor Class. This bonus is in addition to the Shield's normal bonus to AC.</p>
-			<p>The Shield has the following additional properties that you can use while holding it.</p>
-			<p class="indent"><strong><em>Forceful Bash.</em></strong> When you take the Attack action, you can make one of the attack rolls using the Shield against a target within 5 feet of yourself. Apply your Proficiency Bonus and Strength modifier to the attack roll. On a hit, the Shield deals Force damage to the target equal to 2d6 + 2 plus your Strength modifier, and if the target is a creature, you can push it up to 10 feet directly away from yourself. If the creature is your size or smaller, you can also knock it down, giving it the Prone condition.</p>
-			<p class="indent"><strong><em>Protective Field.</em></strong> As a Reaction, when you or an ally you can see within 5 feet of you is targeted by an attack or makes a saving throw against an area of effect, you can use the Shield to create an immobile 5-foot Emanation originating from you. When the Emanation appears, any creatures or objects not fully contained within it are pushed into the nearest unoccupied spaces outside it. The attack or area of effect that triggered the Reaction has no effect on creatures and objects inside the Emanation, which lasts as long as you maintain Concentration, up to 1 minute. Nothing can pass into or out of the Emanation. A creature or object inside the Emanation can't be damaged by attacks or effects originating from outside, nor can a creature inside the Emanation damage anything outside it. Once this property is used, it can't be used again until the next dawn.</p>
-		</description>
-		<sheet alt="Shield of the Cavalier">
-			<description>+2 bonus to AC (in addition to the shield's normal bonus).
-			Forceful Bash: When you take the Attack action, you can make one attack with the Shield (within 5ft.), using your Proficiency Bonus and Strength modifier. On a hit, deals 2d6+2+{{strength:modifier}} force damage. You can push the target up to 10ft. away; if it is your size or smaller, you can also knock it Prone.
-			Protective Field (Reaction, 1/Dawn, Concentration up to 1 min.): When you or an ally within 5ft. is targeted by an attack or area of effect, create a 5-foot Emanation. The triggering attack or effect does not affect creatures inside. Nothing can pass in or out.</description>
-		</sheet>
-		<rules>
-			<stat name="ac:shield" value="2" bonus="enhancement" />
-		</rules>
-	</element>
-
 	<!-- Feature Replacement Grants -->
 	<element name="Crusader's Taunt Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_CRUSADERS_TAUNT" />
 	<element name="Hallowed Weapon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_HALLOWED_WEAPON" />
