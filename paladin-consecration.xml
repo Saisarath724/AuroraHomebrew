@@ -123,6 +123,26 @@
 		</sheet>
 	</element>
 
+	<!-- Seraph's Bane -->
+	<element name="Seraph's Bane" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_MAGIC_ITEM_SERAPHS_BANE">
+		<description>
+			<p>A longsword forged of rotted gold, spikes of the tyrant's lifeblood shooting out at every angle from its blade. It is a weapon that has slain the very angels themselves, brought the World Above to its knees, and harkened the near-complete ascension of the Godbreaker himself.</p>
+			<p>This weapon requires attunement. You gain a +3 bonus to attack and damage rolls made with this magic weapon. On a hit, it deals an additional 1d6 fire damage and 1d6 radiant damage.</p>
+			<p class="indent"><strong><em>Heartseeker.</em></strong> This weapon scores a critical hit on a roll of 19 or 20.</p>
+			<p class="indent"><strong><em>The Heavens Erased.</em></strong> This weapon deals double damage to Celestials.</p>
+			<p class="indent"><strong><em>Ascension.</em></strong> As a magic action, you call on the power of the Tyrant King, inheriting his Visage for one minute. After that minute, you gain five levels of exhaustion and fall unconscious. These levels of exhaustion can only be relieved via the effects of a long rest.</p>
+			<p class="indent"><strong><em>Sentient Weapon.</em></strong> Seraph's Bane is a sentient weapon of Neutral Evil alignment. When drawn, it cannot be sheathed before it has claimed a mortal soul, which it devours.</p>
+			<p class="indent"><strong><em>Counter.</em></strong> This weapon has a counter that tracks between 2 and a maximum value X set by the DM.</p>
+		</description>
+		<sheet alt="Seraph's Bane" usage="Counter: 2/X">
+			<description>+3 to attack and damage rolls. On a hit, deals an additional 1d6 fire and 1d6 radiant damage.
+			Heartseeker: Critical hit on a 19 or 20.
+			The Heavens Erased: Deals double damage to Celestials.
+			Ascension (Magic Action): Inherit the Tyrant King's Visage for 1 minute. Afterward, gain 5 levels of exhaustion and fall unconscious (relieved only by a long rest).
+			Sentient (Neutral Evil): Cannot be sheathed until it has claimed a mortal soul.</description>
+		</sheet>
+	</element>
+
 	<!-- Feature Replacement Grants -->
 	<element name="Crusader's Taunt Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_CRUSADERS_TAUNT" />
 	<element name="Hallowed Weapon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_HALLOWED_WEAPON" />
