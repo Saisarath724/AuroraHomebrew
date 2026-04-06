@@ -13,5 +13,6 @@
 		<file name="paladin-consecration.xml" url="https://raw.githubusercontent.com/Saisarath724/AuroraHomebrew/main/paladin-consecration.xml" />
 		<file name="item-seraphs-bane.xml" url="https://raw.githubusercontent.com/Saisarath724/AuroraHomebrew/main/item-seraphs-bane.xml" />
 		<file name="item-shield-of-the-cavalier.xml" url="https://raw.githubusercontent.com/Saisarath724/AuroraHomebrew/main/item-shield-of-the-cavalier.xml" />
+		<file name="item-adamantine-armor-plus-one.xml" url="https://raw.githubusercontent.com/Saisarath724/AuroraHomebrew/main/item-adamantine-armor-plus-one.xml" />
 	</files>
 </index>

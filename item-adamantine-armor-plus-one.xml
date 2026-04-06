@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adamantine Armor +1</name>
+		<update version="0.0.1">
+			<file name="item-adamantine-armor-plus-one.xml" url="https://raw.githubusercontent.com/Saisarath724/AuroraHomebrew/main/item-adamantine-armor-plus-one.xml" />
+		</update>
+	</info>
+
+	<element name="Adamantine Armor +1" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_MAGIC_ITEM_ADAMANTINE_ARMOR_PLUS_ONE">
+		<description>
+			<p>This suit of armor is reinforced with adamantine, one of the hardest substances in existence, and has been further enhanced with powerful magic. While you're wearing it, any critical hit against you becomes a normal hit. In addition, you gain a +1 bonus to Armor Class while wearing this armor.</p>
+		</description>
+		<sheet alt="Adamantine Armor +1">
+			<description>Any critical hit against you becomes a normal hit. You gain a +1 bonus to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+</elements>
