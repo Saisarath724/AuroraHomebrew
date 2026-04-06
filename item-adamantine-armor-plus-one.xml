@@ -11,9 +11,15 @@
 		<description>
 			<p>This suit of armor is reinforced with adamantine, one of the hardest substances in existence, and has been further enhanced with powerful magic. While you're wearing it, any critical hit against you becomes a normal hit. In addition, you gain a +1 bonus to Armor Class while wearing this armor.</p>
 		</description>
-		<sheet alt="Adamantine Armor +1">
-			<description>Any critical hit against you becomes a normal hit. You gain a +1 bonus to AC.</description>
-		</sheet>
+		<setters>
+			<set name="keywords">adamantine</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="medium or heavy armor, but not hide">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
 		<rules>
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
 		</rules>
