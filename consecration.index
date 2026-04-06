@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Oath of Consecration</name>
+		<description>Homebrew Paladin subclass — Oath of Consecration, by the Creed of House Senth.</description>
+		<author>Homebrew</author>
+		<version>0.0.1</version>
+	</info>
+
+	<files>
+		<file name="paladin-consecration.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/homebrew/paladin-consecration.xml" />
+	</files>
+</index>

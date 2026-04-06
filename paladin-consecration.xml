@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Consecration</name>
+		<description>The Oath of Consecration subclass, homebrew by the DM (House Senth).</description>
+		<author>Homebrew — The Creed of House Senth</author>
+		<update version="0.0.1">
+			<file name="paladin-consecration.xml" url="homebrew/paladin-consecration.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Consecration" type="Archetype" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_PALADIN_OATH_OF_CONSECRATION">
+		<supports>Paladin Subclass</supports>
+		<description>
+			<p class="flavor">For a blade that never rests, never tires. For a will that never weakens, never breaks. For a body that endures all which may come by it...</p>
+			<p>That is what it means to be a Paladin of Consecration.</p>
+			<p class="indent"><em>Through battle, through war we find our light.</em></p>
+			<p class="indent"><em>Through fit, through fury we show our might.</em></p>
+			<p class="indent"><em>To break all those who crossed the line.</em></p>
+			<p class="indent"><em>To slay those unholy, undivine.</em></p>
+			<p style="text-align:right">— The Creed of House Senth</p>
+			<h4>Tenets of Consecration</h4>
+			<p><b>The Eradication of Wickedness.</b> Not only the Blight, but every festering wound of corruption must fall before the divine light of your blade, no matter the source.</p>
+			<p><b>The Courage of a Pantheon.</b> A warrior of Consecration must be steadfast in the face of danger, willing to stand tall no matter the odds they face.</p>
+			<p><b>The Protection of Divinity.</b> When sanctity is threatened, it is your sworn oath to lend aid in times of strife.</p>
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_OATH_SPELLS" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_CRUSADERS_TAUNT" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_HALLOWED_WEAPON" />
+			<div element="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_SANCTIFY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_CRUSADERS_TAUNT" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_HALLOWED_WEAPON" level="7" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_HALLOWED_WEAPON_UPGRADE" level="11" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_SANCTIFY" level="15" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_CRUSADERS_TAUNT_UPGRADE" level="9" />
+		</rules>
+	</element>
+
+	<!-- Oath Spells -->
+	<element name="Level 3: Oath Spells" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_OATH_SPELLS">
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Consecration Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Oath of Consecration Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-25">Paladin Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Bane, Protection from Evil and Good</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Zone of Truth, Aganazzar's Scorcher</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Crusader's Mantle, Remove Curse</em></td></tr>
+				<tr><td>13</td><td class="left"><em>Banishment, Guardian of Faith</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AGANAZZARS_SCORCHER" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="13" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<!-- Crusader's Taunt (Level 3) -->
+	<element name="Level 3: Crusader's Taunt" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_CRUSADERS_TAUNT">
+		<requirements>!ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_CRUSADERS_TAUNT</requirements>
+		<description>
+			<p>As a bonus action, you can expend one use of your Channel Divinity to make your presence undeniable on the battlefield. Every enemy creature within 40 feet of you must make a Wisdom Saving Throw, or be compelled to attack you until the end of their next turn. Any attacks they make against targets that are not you are made at Disadvantage, while targets against you are made at Advantage.</p>
+			<p class="indent">At 9th level, any creature under the effects of Crusader's Taunt has their damage halved against you.</p>
+		</description>
+		<sheet alt="Crusader's Taunt" action="Bonus Action" usage="Channel Divinity">
+			<description>Every enemy creature within 40ft. of you must make a DC{{paladin:spellcasting:dc}} Wisdom saving throw or be compelled to attack you until the end of their next turn. Attacks they make against targets other than you are made at Disadvantage; attacks against you are made at Advantage.</description>
+			<description level="9">Every enemy creature within 40ft. of you must make a DC{{paladin:spellcasting:dc}} Wisdom saving throw or be compelled to attack you until the end of their next turn. Attacks they make against targets other than you are made at Disadvantage; attacks against you are made at Advantage. Additionally, creatures under this effect deal halved damage to you.</description>
+		</sheet>
+	</element>
+
+	<!-- Crusader's Taunt Level 9 Upgrade (silent grant) -->
+	<element name="Crusader's Taunt (Level 9 Upgrade)" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_CRUSADERS_TAUNT_UPGRADE">
+		<description>
+			<p>Any creature under the effects of Crusader's Taunt has their damage halved against you.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!-- Hallowed Weapon (Level 7) -->
+	<element name="Level 7: Hallowed Weapon" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_HALLOWED_WEAPON">
+		<requirements>!ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_HALLOWED_WEAPON</requirements>
+		<description>
+			<p>Whenever you deal melee bludgeoning, slashing, or piercing damage, you may expend a spell slot of any level to turn it into an arc of radiance. Any other enemy within 90 degrees of your strike must make a Constitution Saving Throw, taking that damage as <i>radiant</i> damage on a failed save, halved on a success.</p>
+			<p class="indent">At 11th level, you now affect every enemy within 5 feet of you.</p>
+		</description>
+		<sheet alt="Hallowed Weapon">
+			<description>When you deal melee bludgeoning, slashing, or piercing damage, you may expend a spell slot of any level to convert the damage into radiant and arc it outward. Any other enemy within 90 degrees of your strike must make a DC{{paladin:spellcasting:dc}} Constitution saving throw, taking that damage as radiant on a failure, halved on a success.</description>
+			<description level="11">When you deal melee bludgeoning, slashing, or piercing damage, you may expend a spell slot of any level to convert the damage into radiant and arc it outward. Every other enemy within 5 feet of you must make a DC{{paladin:spellcasting:dc}} Constitution saving throw, taking that damage as radiant on a failure, halved on a success.</description>
+		</sheet>
+	</element>
+
+	<!-- Hallowed Weapon Level 11 Upgrade (silent grant) -->
+	<element name="Hallowed Weapon (Level 11 Upgrade)" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_HALLOWED_WEAPON_UPGRADE">
+		<description>
+			<p>Hallowed Weapon now affects every enemy within 5 feet of you, rather than within 90 degrees of your strike.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!-- Sanctify (Level 15) -->
+	<element name="Level 15: Sanctify" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONSECRATION_SANCTIFY">
+		<requirements>!ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_SANCTIFY</requirements>
+		<description>
+			<p>You may spend an action to call on your oath-begotten powers, suffusing yourself with true celestial energy as you begin to glow. Every creature within 30 feet of you must make a Constitution Saving Throw. On a failed save, they take 5d8 radiant damage and are vulnerable to <i>radiant</i> damage until the start of their next turn. On a success, they take half damage and suffer no additional effects.</p>
+			<p class="indent">You can utilize this benefit up to three times per long rest, regaining a use upon a short rest.</p>
+		</description>
+		<sheet alt="Sanctify" action="Action" usage="3/Long Rest">
+			<description>Every creature within 30ft. of you must make a DC{{paladin:spellcasting:dc}} Constitution saving throw. On a failure, they take 5d8 radiant damage and are vulnerable to radiant damage until the start of their next turn. On a success, they take half damage with no additional effects. You regain one use on a Short Rest.</description>
+		</sheet>
+	</element>
+
+	<!-- Feature Replacement Grants -->
+	<element name="Crusader's Taunt Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_CRUSADERS_TAUNT" />
+	<element name="Hallowed Weapon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_HALLOWED_WEAPON" />
+	<element name="Sanctify Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_HOMEBREW_FEATURE_REPLACEMENT_PALADIN_CONSECRATION_SANCTIFY" />
+
+</elements>
