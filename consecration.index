@@ -3,9 +3,10 @@
 	<info>
 		<name>Oath of Consecration</name>
 		<description>Homebrew Paladin subclass - Oath of Consecration, by the Creed of House Senth.</description>
-		<author>Homebrew</author>
-		<version>0.0.1</version>
-		<url>https://raw.githubusercontent.com/Saisarath724/AuroraHomebrew/main/consecration.index</url>
+		<author url="https://github.com/Saisarath724">Homebrew</author>
+		<update version="0.0.1">
+			<file name="consecration.index" url="https://raw.githubusercontent.com/Saisarath724/AuroraHomebrew/main/consecration.index" />
+		</update>
 	</info>
 
 	<files>
